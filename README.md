@@ -45,7 +45,7 @@ ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is 
   - Input: Size-class filtered sample BAM files and text file
   - Output: DeepTools-generated heatmap and metaplot visualizations of factor over regions of interest
 
-- For homer_motif_analysis:
+- For homer_motif_analysis.bash:
   - Input: Size-class filtered sample BAM files 
   - Output: HOMER-generated Motif matrix for factor-occupied regions of interest
 
