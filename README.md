@@ -1,9 +1,9 @@
-#uliCUT&RUNAnalysis Analysis Pipeline
+# uliCUT&RUNAnalysis Analysis Pipeline
 
-Description
+## Description
 ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is a variant of the CUT&RUN technique developed by the Henikoff group, with key modifications that decrease background signal, increase output, and lower the amount of input material needed to successfully profile chromatin-associated protein localization at single cell or embryo resolution. The data analysis described herein is a basic uliCUT&RUN bioformatic pipeline that step-by-step guides the user to process raw fastq files into occupancy visualization plots and perform binding motif analysis at factor-occupied regions of interest. THis analysis requires a basic understanding of UNIX commands but can be run on a standard computing cluster. For advanced users, we suggests alternatives to the programs and packages used in this analysis in the accompanying manuscript that could serve as a starting point for a custom analysis pipeline.
 
-Requirements
+## Requirements
 
 FastQC, v0.11.9
 
@@ -17,7 +17,7 @@ deepTools, v3.3.0
 
 HOMER, v4.10.3
 
-Pipeline Usage
+## Pipeline Usage
 
 1. FastQC.bash
 Input: Raw paired fastq files
@@ -61,7 +61,7 @@ Input: Size-class filtered sample BAM files
 
 Output: HOMER-generated Motif matrix for factor-occupied regions of interest
 
-Software Sources
+## Software Sources
 
 FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
@@ -75,6 +75,6 @@ deepTools (https://deeptools.readthedocs.io/en/develop/index.html)
 
 HOMER (http://homer.ucsd.edu/homer/)
 
-Acknowledgements
+## Acknowledgements
 
 We thank the Henikoff group for original development of CUT&RUN and discussion regarding application. We thank A. Boskovic and T. Fazzio for assistance in development and application of uliCUT&RUN. We thank members of the Hainer lab and the program developers for aid in development of this data analysis pipeline.
