@@ -1,4 +1,4 @@
-uliCUT&RUNAnalysis Analysis Pipeline
+#uliCUT&RUNAnalysis Analysis Pipeline
 
 Description
 ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is a variant of the CUT&RUN technique developed by the Henikoff group, with key modifications that decrease background signal, increase output, and lower the amount of input material needed to successfully profile chromatin-associated protein localization at single cell or embryo resolution. The data analysis described herein is a basic uliCUT&RUN bioformatic pipeline that step-by-step guides the user to process raw fastq files into occupancy visualization plots and perform binding motif analysis at factor-occupied regions of interest. THis analysis requires a basic understanding of UNIX commands but can be run on a standard computing cluster. For advanced users, we suggests alternatives to the programs and packages used in this analysis in the accompanying manuscript that could serve as a starting point for a custom analysis pipeline.
