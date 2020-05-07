@@ -19,27 +19,27 @@ ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is 
 
 ## **Pipeline Usage**
 
-1. *FastQC.bash
+1. *FastQC.bash*
 - Input: Raw paired fastq files
 - Output: Html fastq quality assessment report
 
-2. *bowtie2.bash
+2. *bowtie2.bash*
 - Input: Quality-assessed paired fastq files
 - Output: Paired end sequence alignment map (SAM) files for sample and spike-in 
 
-3. *picard.bash
+3. *picard.bash*
 - Input: Paired end sample SAM files
 - Output: Paired end sample SAM files filtered of PCR duplicates and reads MAPQ<10 and text file containing lengths of all reads within sample and spike-in SAMs.
 
-3.5. *Fragment Distribution profile generation with desired spread sheet program
+3.5. *Fragment Distribution profile generation with desired spread sheet program*
 - Input: Text files of fragment lenths of reads in sample and spike-in SAMs
 - Output Fragment Distribution profile
 
-4. *size_class.bash with bowtie2.header
+4. *size_class.bash with bowtie2.header*
 - Input: Filtered sample SAM files 
 - Output: Size-class filtered sample binary aligment map (BAM) files
 
-5. *deepTools.bash and/or homer_motif_calling.bash
+5. *deepTools.bash and/or homer_motif_calling.bash*
 
 - For deepTools.bash:
   - Input: Size-class filtered sample BAM files and text file
