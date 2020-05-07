@@ -1,7 +1,7 @@
 # **uliCUT&RUNAnalysis Analysis Pipeline**
 
 ## **Description**
-ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is a variant of the CUT&RUN technique developed by the Henikoff group, with key modifications that decrease background signal, increase output, and lower the amount of input material needed to successfully profile chromatin-associated protein localization at single cell or embryo resolution. The data analysis described herein is a basic uliCUT&RUN bioformatic pipeline that step-by-step guides the user to process raw fastq files into occupancy visualization plots and perform binding motif analysis at factor-occupied regions of interest. THis analysis requires a basic understanding of UNIX commands but can be run on a standard computing cluster. For advanced users, we suggests alternatives to the programs and packages used in this analysis in the accompanying manuscript that could serve as a starting point for a custom analysis pipeline.
+ultra-low input Cleavage Under Target and Release Using Nuclease (uliCUT&RUN) is a variant of the CUT&RUN technique developed by the Henikoff group based on previously established ChIC technology to probe factor localization on chromatin. The data analysis described herein is a basic uliCUT&RUN bioin formatic pipeline that step-by-step guides the user to process raw fastq files into occupancy visualization plots and perform binding motif analysis at factor-occupied regions of interest. This analysis requires a basic understanding of UNIX commands but can be run on a standard computing cluster. For advanced users, we suggest alternatives to the programs and packages used in these suggested analyses (and in the accompanying manuscript) which serve as a starting point for a custom analysis pipeline.
 
 ## **Requirements**
 
@@ -9,7 +9,7 @@ ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is 
 
 - Samtools, v1.9
 
-- Bowtie2 , v2.3.5.1
+- Bowtie2, v2.3.5.1
 
 - Picard, v2.18.12
 
@@ -32,12 +32,12 @@ ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is 
 - Output: Paired end sample SAM files filtered of PCR duplicates and reads MAPQ<10 and text file containing lengths of all reads within sample and spike-in SAMs.
 
 3.5. *Fragment Distribution profile generation with desired spread sheet program*
-- Input: Text files of fragment lenths of reads in sample and spike-in SAMs
+- Input: Text files of fragment lengths of reads in sample and spike-in SAMs
 - Output Fragment Distribution profile
 
 4. *size_class.bash with bowtie2.header*
-- Input: Filtered sample SAM files 
-- Output: Size-class filtered sample binary aligment map (BAM) files
+- Input: Filtered sample SAM files and bowtie2.header
+- Output: Size-class filtered sample binary alignment map (BAM) files
 
 5. *deepTools.bash and/or homer_motif_calling.bash*
 
@@ -54,7 +54,7 @@ ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is 
 - FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 - Samtools (http://www.htslib.org/download/)
 - Bowtie2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
-- Picard, (https://broadinstitute.github.io/picard/)
+- Picard (https://broadinstitute.github.io/picard/)
 - deepTools (https://deeptools.readthedocs.io/en/develop/index.html)
 - HOMER (http://homer.ucsd.edu/homer/)
 
