@@ -57,5 +57,5 @@ computeMatrix reference-point -R $bed/annotation_file.bed -S $bws/sample1_mouse_
 plotHeatmap -m $mats/sample1_mouse_1_120.mat --zMin -3 --zMax 3 --colorMap 'seismic' \
 --whatToShow 'plot, heatmap and colorbar' --outFileName $plots/sample1_mouse_1_120.png
 
-rm $spike_in_reads/$spike_in_reads/spike_in_reads.txt
-
+rm $spike_in_reads/spike_in_reads.txt
+rm $spike_in_reads/spike_in_reads2.txt
