@@ -24,36 +24,55 @@ Input: Raw paired fastq files
 Output: Html fastq quality assessment report
 
 2. bowtie2.bash
+
 Input: Quality-assessed paired fastq files
+
 Output: Paired end sequence alignment map (SAM) files for sample and spike-in 
 
 3. picard.bash
+
 Input: Paired end sample SAM files
+
 Output: Paired end sample SAM files filtered of PCR duplicates and reads MAPQ<10 and text file containing lengths of all reads within sample and spike-in SAMs.
 
 3.5. Fragment Distribution profile generation with desired spread sheet program
+
 Input: Text files of fragment lenths of reads in sample and spike-in SAMs
+
 Output Fragment Distribution profile
 
 4. size_class.bash with bowtie2.header
+
 Input: Filtered sample SAM files 
+
 Output: Size-class filtered sample binary aligment map (BAM) files
+
 5. deepTools.bash and/or homer_motif_calling.bash
 
 For deepTools.bash:
+
 Input: Size-class filtered sample BAM files and text file
+
 Output: DeepTools-generated heatmap and metaplot visualizations of factor over regions of interest
 
 For homer_motif_analysis:
+
 Input: Size-class filtered sample BAM files 
+
 Output: HOMER-generated Motif matrix for factor-occupied regions of interest
 
 Software Sources
+
 FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+
 Samtools (http://www.htslib.org/download/)
+
 Bowtie2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+
 Picard, (https://broadinstitute.github.io/picard/)
+
 deepTools (https://deeptools.readthedocs.io/en/develop/index.html)
+
 HOMER (http://homer.ucsd.edu/homer/)
 
 Acknowledgements
