@@ -19,7 +19,7 @@ ultra-low input Cleavage Under Target and Release Using Nuclease(uliCUT&RUN) is 
 
 ## **Pipeline Usage**
 
-1. *FastQC.bash*
+1. *fastQC.bash*
 - Input: Raw paired fastq files
 - Output: Html fastq quality assessment report
 
